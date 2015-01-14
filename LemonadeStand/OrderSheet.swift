@@ -18,24 +18,30 @@ class OrderSheet{
     func addLemonToOrder(cost: Int)
     {
         lemonOrder += 1
-        self.cost -= cost
+        self.cost += cost
     }
     
     func removeLemonFromOrder(cost: Int)
     {
         lemonOrder -= 1
-        self.cost += cost
+        self.cost -= cost
     }
     
     func addIceToOrder(cost: Int)
     {
         iceOrder += 1
-        self.cost -= cost
+        self.cost += cost
     }
     
     func removeIceFromOrder(cost: Int)
     {
         iceOrder -= 1
-        self.cost += cost
+        self.cost -= cost
+    }
+    
+    func reset(){
+        self.cost = 0
+        self.lemonOrder = 0
+        self.iceOrder = 0
     }
 }

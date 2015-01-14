@@ -415,6 +415,7 @@
 				A1C4FBA31A650AC7009A9502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1C4FBA41A650AC7009A9502 /* Build configuration list for PBXNativeTarget "LemonadeStandTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				A1C4FBA61A650AC7009A9502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

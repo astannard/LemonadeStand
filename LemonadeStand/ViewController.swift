@@ -36,9 +36,13 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func test(sender: AnyObject) {
+        println("aaaaaaa")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -68,11 +72,13 @@ class ViewController: UIViewController {
     @IBAction func increaseTheIcePressed(sender: UIButton) {
        println("whats cooler than cool; Ice cold")
         order.addIceToOrder(kIceCost)
+        updateUI()
     }
     
     @IBAction func removeIcecubeFromOrderPressed(sender: AnyObject) {
         println("take some ice back")
         order.removeIceFromOrder(kIceCost)
+        updateUI()
     }
     
     
@@ -94,12 +100,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func removeIceFromTheMixPressed(sender: UIButton) {
+        updateUI()
     }
     
     
     //Start selling
     @IBAction func startSelling(sender: AnyObject) {
         println("DO IT!")
+        makePurchases()
+        updateUI()
     }
     
 
@@ -121,6 +130,15 @@ class ViewController: UIViewController {
     func updateOrder(){
         lemonsToBuyLabel.text = "\(order.lemonOrder)"
         icecubesToBuyLabel.text = "\(order.iceOrder)"
+    }
+    
+    func makePurchases(){
+        if(order.cost <= balance.cash) {
+            balance.handleOrder(order)
+        }
+        else{
+            println("Too ambitious scale back your spending")
+        }
     }
 }
 

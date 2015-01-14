@@ -33,6 +33,11 @@ class BalanceSheet {
         cash -= cost
     }
     
-    
+    func handleOrder(order:OrderSheet){
+        self.lemonStock += order.lemonOrder
+        self.iceStock += order.iceOrder
+        self.cash -= order.cost
+        order.reset()
+    }
     
 }
