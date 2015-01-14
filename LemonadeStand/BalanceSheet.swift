@@ -15,23 +15,6 @@ class BalanceSheet {
     var iceStock = 0
     
     
-    func buyLemon(cost: Int)
-    {
-        lemonStock += 1
-        cash -= cost
-    }
-    
-    func returnLemon(cost: Int)
-    {
-        lemonStock -= 1
-        cash += cost
-    }
-    
-    func buyIce(cost: Int)
-    {
-        iceStock += 1
-        cash -= cost
-    }
     
     func handleOrder(order:OrderSheet){
         self.lemonStock += order.lemonOrder

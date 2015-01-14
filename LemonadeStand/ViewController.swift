@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     var balance = BalanceSheet()
     var order = OrderSheet()
+    var mix = DailyMix()
     
     let kLemonCost = 2
     let kIceCost = 1
@@ -85,29 +86,36 @@ class ViewController: UIViewController {
     // Mixology Actions
     
     @IBAction func addLemonToTheMixPressed(sender: UIButton) {
-        
+        mix.addLemonToMix(balance)
         updateUI()
     }
     
     
     @IBAction func removeLemonFromTheMixPressed(sender: UIButton) {
+        mix.removeLemonFromMix(balance)
+        updateUI()
     }
     
     
     @IBAction func addIceToTheMixPressed(sender: UIButton) {
-        
+        mix.addIceToMix(balance)
         updateUI()
     }
     
     @IBAction func removeIceFromTheMixPressed(sender: UIButton) {
+        mix.removeIceFromMix(balance)
         updateUI()
     }
     
+    @IBAction func makePurchaseClicked(sender: AnyObject) {
+        makePurchases()
+        updateUI()
+    }
     
     //Start selling
     @IBAction func startSelling(sender: AnyObject) {
         println("DO IT!")
-        makePurchases()
+      
         updateUI()
     }
     
@@ -117,7 +125,7 @@ class ViewController: UIViewController {
     func updateUI(){
         updateBalances()
         updateOrder()
-        
+        updateMix()
     }
     
     func updateBalances(){
@@ -130,6 +138,11 @@ class ViewController: UIViewController {
     func updateOrder(){
         lemonsToBuyLabel.text = "\(order.lemonOrder)"
         icecubesToBuyLabel.text = "\(order.iceOrder)"
+    }
+    
+    func updateMix(){
+        lemonsInTheMixLabel.text = "\(mix.lemons)"
+        icecubesInTheMixLabel.text = "\(mix.icecubes)"
     }
     
     func makePurchases(){

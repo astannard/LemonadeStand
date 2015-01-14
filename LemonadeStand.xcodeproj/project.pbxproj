@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A4D27D41A671DCA0015FC71 /* DailyMix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D27D31A671DCA0015FC71 /* DailyMix.swift */; };
 		A1C4FB881A650AC7009A9502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4FB871A650AC7009A9502 /* AppDelegate.swift */; };
 		A1C4FB8A1A650AC7009A9502 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4FB891A650AC7009A9502 /* ViewController.swift */; };
 		A1C4FB8D1A650AC7009A9502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C4FB8B1A650AC7009A9502 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A4D27D31A671DCA0015FC71 /* DailyMix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyMix.swift; sourceTree = "<group>"; };
 		A1C4FB821A650AC7009A9502 /* LemonadeStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C4FB861A650AC7009A9502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C4FB871A650AC7009A9502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				A1C4FB901A650AC7009A9502 /* LaunchScreen.xib */,
 				A1C4FB851A650AC7009A9502 /* Supporting Files */,
 				A1C4FBA71A665B45009A9502 /* BalanceSheet.swift */,
+				7A4D27D31A671DCA0015FC71 /* DailyMix.swift */,
 				A1C4FBA91A665F16009A9502 /* OrderSheet.swift */,
 			);
 			path = LemonadeStand;
@@ -220,6 +223,7 @@
 			files = (
 				A1C4FBAA1A665F16009A9502 /* OrderSheet.swift in Sources */,
 				A1C4FBA81A665B45009A9502 /* BalanceSheet.swift in Sources */,
+				7A4D27D41A671DCA0015FC71 /* DailyMix.swift in Sources */,
 				A1C4FB8A1A650AC7009A9502 /* ViewController.swift in Sources */,
 				A1C4FB881A650AC7009A9502 /* AppDelegate.swift in Sources */,
 			);
