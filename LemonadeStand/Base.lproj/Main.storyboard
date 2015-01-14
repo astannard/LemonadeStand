@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2F-GU-EZd">
-                                <rect key="frame" x="24" y="0.0" width="600" height="600"/>
-                                <connections>
-                                    <segue destination="3xe-ik-iba" kind="embed" id="O48-vX-nXd"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2S-Pn-NpH">
                                 <rect key="frame" x="44" y="28" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -147,48 +141,72 @@
                                 <state key="normal" title="+">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="increaseLemonOrderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7E-St-EfM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHj-CG-kKq">
                                 <rect key="frame" x="254" y="175" width="30" height="30"/>
                                 <state key="normal" title="-">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="removeLemonFromOrderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kam-fX-6xt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C5-Lc-9cz">
                                 <rect key="frame" x="186" y="199" width="30" height="30"/>
                                 <state key="normal" title="+">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="increaseTheIcePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zV2-6T-Cag"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rW9-Cg-9XQ">
                                 <rect key="frame" x="254" y="199" width="30" height="30"/>
                                 <state key="normal" title="-">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="removeIcecubeFromOrderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0mi-8n-EDN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHa-qm-umx">
                                 <rect key="frame" x="170" y="329" width="30" height="30"/>
                                 <state key="normal" title="+">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addLemonToTheMixPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p9Z-fT-EpE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yA-VP-KrY">
                                 <rect key="frame" x="253" y="325" width="30" height="30"/>
                                 <state key="normal" title="-">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="removeLemonFromTheMixPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jzb-IX-3OO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmj-3j-hr4">
                                 <rect key="frame" x="170" y="356" width="30" height="30"/>
                                 <state key="normal" title="+">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addIceToTheMixPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UvK-ct-hrr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aC-yq-DUx">
                                 <rect key="frame" x="254" y="361" width="30" height="30"/>
                                 <state key="normal" title="-">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="removeIceFromTheMixPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QYe-mo-OCE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujk-pY-aFj">
                                 <rect key="frame" x="222" y="527" width="156" height="30"/>
@@ -196,102 +214,27 @@
                                 <state key="normal" title="Start Selling">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startSelling:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AxE-BM-qWZ"/>
+                                </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2F-GU-EZd">
+                                <rect key="frame" x="34" y="0.0" width="600" height="600"/>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="icecubeBalanceLabel" destination="cD9-UE-Oad" id="iCF-bU-Y6Q"/>
+                        <outlet property="icecubesInTheMixLabel" destination="EEh-VC-L4t" id="RbE-q5-zvm"/>
+                        <outlet property="icecubesToBuyLabel" destination="xw0-Tf-GpT" id="dZX-vk-6xu"/>
+                        <outlet property="lemonBalanceLabel" destination="tbR-Xs-jHk" id="d91-7b-2yD"/>
+                        <outlet property="lemonsInTheMixLabel" destination="h45-yM-GMl" id="6aO-Bb-70O"/>
+                        <outlet property="lemonsToBuyLabel" destination="sYk-fH-w0x" id="3in-Ra-KVc"/>
+                        <outlet property="moneyBalanceLabel" destination="NIf-ED-ztq" id="n1c-gR-7EF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="1Ma-70-9zw">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="3xe-ik-iba" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kqo-fl-LuL"/>
-                        <viewControllerLayoutGuide type="bottom" id="870-RA-iwX"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="psK-1J-hPD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jqo-D9-YkS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="zCK-9q-CuI">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="qRN-lw-JPt" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pJW-MT-z2s"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dq1-SI-nVe"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ahZ-nG-fdY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rkW-Ol-qiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="YEs-VD-VET">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="5he-D3-LUZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4lI-dh-WnP"/>
-                        <viewControllerLayoutGuide type="bottom" id="M7q-nO-T6x"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ruj-E2-AnB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gFB-jl-k5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="bxP-rO-HgE">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="LFy-Wh-1fV" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YSg-da-l1D"/>
-                        <viewControllerLayoutGuide type="bottom" id="8mL-ro-JV0"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="07r-zE-GRw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rqx-8C-lzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="BvO-vh-Km0">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="XBA-yF-BSJ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hx8-2n-hlK"/>
-                        <viewControllerLayoutGuide type="bottom" id="wVO-3T-ehE"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TgI-M2-30t">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C80-3C-hJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
