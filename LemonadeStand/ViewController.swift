@@ -14,11 +14,12 @@ class ViewController: UIViewController {
     var balance = BalanceSheet()
     var order = OrderSheet()
     var mix = DailyMix()
-    
+    var lemonade = Lemonade()
     let kLemonCost = 2
     let kIceCost = 1
     
-    
+    var customers:[Customer] = []
+   
     
     //Balnaces
     @IBOutlet weak var moneyBalanceLabel: UILabel!
@@ -115,7 +116,10 @@ class ViewController: UIViewController {
     //Start selling
     @IBAction func startSelling(sender: AnyObject) {
         println("DO IT!")
-      
+        getCustomers()
+        lemonade.mixIt(mix)
+        sellIt()
+        mix.reset()
         updateUI()
     }
     
@@ -153,5 +157,31 @@ class ViewController: UIViewController {
             println("Too ambitious scale back your spending")
         }
     }
+    
+    func getCustomers(){
+        var customercount = Int(arc4random_uniform(10))
+        customers = []
+        for var i = 0; i < customercount; i++ {
+            self.customers.append(Customer())
+        }
+        
+    }
+    
+    func sellIt()
+    {
+        for (index, customer) in enumerate(customers) {
+            if(customer.preference() == self.lemonade.flavour())
+            {
+                self.balance.cash += 1
+                println("show me the money")
+            }
+            else
+            {
+                println("never mind")
+            }
+        }
+    }
+    
+
 }
 
